@@ -1,0 +1,312 @@
+/* DJ-MegaMenu general styles */
+.dj-megamenu-override {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+    height: 40px;
+    position: relative;
+    z-index: 500;
+    width: auto;
+    
+    
+}
+.dj-megamenu-override li.dj-up {
+	position: relative;
+    display: block;
+    float: left;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.dj-megamenu-override li a.dj-up_a {
+    display: block;
+    float: left;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 0 15px;
+    cursor: pointer;
+    background: transparent;
+}
+.dj-megamenu-override li.first a.dj-up_a {
+	border-left: 0;
+}
+.dj-megamenu-override li:last-child a.dj-up_a {
+	border-right: 0;
+}
+.dj-megamenu-override li a.dj-up_a span {
+    float: left;
+    display: block;
+    padding: 0 0 0 !important;
+    height: 40px;
+    line-height: 40px;
+    background: transparent;
+}
+.dj-megamenu-override li a.dj-up_a.withsubtitle span {
+	line-height: 48px;
+}
+.dj-megamenu-override li a.dj-up_a span.dj-drop {
+    padding: 0 20px 0 0 !important;
+    background: url(../images/arrow.png) right 50% no-repeat;
+}
+.dj-megamenu-override li a.dj-up_a small.subtitle {
+	display: block;
+    font-size: 12px;
+    font-weight: normal; 
+    line-height: 1;
+    text-transform: none;
+    color: #999999;
+    margin-top: -12px;
+}
+.dj-megamenu-override li:hover a.dj-up_a, .dj-megamenu-override li.hover a.dj-up_a, .dj-megamenu-override li.active a.dj-up_a {
+    border-bottom: 1px solid #46a5df;
+}
+.dj-megamenu-override li:hover a.dj-up_a small.subtitle,
+.dj-megamenu-override li.hover a.dj-up_a small.subtitle, 
+.dj-megamenu-override li.active a.dj-up_a small.subtitle {
+	color: #a4c4f5;
+}
+.dj-megamenu-override li:hover a.dj-up_a span,
+.dj-megamenu-override li.hover a.dj-up_a span, 
+.dj-megamenu-override li.active a.dj-up_a span {
+}
+
+.dj-megamenu-override li:hover a.dj-up_a span.dj-drop,
+.dj-megamenu-override li.hover a.dj-up_a span.dj-drop, 
+.dj-megamenu-override li.active a.dj-up_a span.dj-drop {
+	background: url(../images/arrow.png) right 53% no-repeat;
+}
+
+.dj-megamenu-override li.separator > a {
+    cursor: default;
+}
+
+.dj-megamenu-override li a.dj-up_a span span.image-title {
+	background: none;
+	padding: 0 !important;
+	margin: 0 0 0 15px;
+	display: inline-block;
+	float: none;
+	height: auto;
+}
+.dj-megamenu-override li a.dj-up_a img {
+	border: 0;
+	margin: 0;
+	max-height: 32px;
+	vertical-align: middle;
+}
+.dj-megamenu-override li a.dj-up_a.withsubtitle img {
+	margin-top: -24px;
+}
+/* Default list styling */
+.dj-megamenu-override li:hover,
+.dj-megamenu-override li.hover {
+    position: relative;
+    z-index: 200;
+}
+/* Hide submenus */
+
+.dj-megamenu-override li div.dj-subwrap, .dj-megamenu-override li:hover div.dj-subwrap li div.dj-subwrap,
+.dj-megamenu-override li.hover div.dj-subwrap li div.dj-subwrap {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Show first level submenu */
+.dj-megamenu-override li:hover div.dj-subwrap,
+.dj-megamenu-override li.hover div.dj-subwrap {
+	left: 0;
+    top: 40px;
+	text-transform:uppercase;
+	background:#fff;
+    height: auto;
+    z-index: 300;
+    -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+/* Show higher level submenus */
+.dj-megamenu-override li:hover div.dj-subwrap li:hover > div.dj-subwrap,
+.dj-megamenu-override li.hover div.dj-subwrap li.hover > div.dj-subwrap {
+    left: 100%;
+    top: 5px;
+    margin: 0 0 0 10px;
+    background: #f5f5f5;
+    height: auto;
+    z-index: 400;
+    -webkit-box-shadow:  0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+    box-shadow:  0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* Submenu elements styles - drop down */
+.dj-megamenu-override li div.dj-subcol {
+	float: left;
+}
+.dj-megamenu-override li ul.dj-submenu {	
+    padding: 0px;
+    margin: 0 10px;
+    height: auto;
+    width: auto;
+}
+.dj-megamenu-override li ul.dj-submenu > li {
+	list-style: none outside;
+    display: block;
+    height: auto;
+    position: relative;
+    width: auto;
+    /*border-top: 1px solid #f5f5f5;*/
+}
+.dj-megamenu-override li ul.dj-submenu > li.first {
+	border: 0;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #333;
+    background: transparent;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 -10px;
+    
+    -webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a span.image-title {
+	color: #333 !important;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a img,
+.dj-megamenu-override li ul.dj-submenu > li > a i.fa, 
+.dj-megamenu-override li ul.dj-submenu > li > a i[class^="icon-"] {
+	float: left;
+	border: 0;
+	margin: 0 15px 8px 0;
+	vertical-align: middle;
+	max-height: 16px;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a small.subtitle {
+	color: #666;
+    display: block;
+    font-size: 10px;
+    line-height: 1;
+}
+.dj-megamenu-override li ul.dj-submenu > li:hover > a,
+.dj-megamenu-override li ul.dj-submenu > li.hover > a {
+	background: #f5f5f5;
+}
+.dj-megamenu-override li ul.dj-submenu > li:hover > a small.subtitle,
+.dj-megamenu-override li ul.dj-submenu > li.hover > a small.subtitle {
+	color: #a4c4f5;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a:hover {	
+    color: #333;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a:hover span.image-title {
+	color: #fff !important;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a.active {
+    background: #f5f5f5;
+}
+.dj-megamenu-override li ul.dj-submenu > li > a.active small.subtitle {
+	color: #a4c4f5;
+}
+.dj-megamenu-override li ul.dj-submenu > li.parent > a {
+    background-color: transparent;
+    background-image: url(../images/subarrow.png);
+    background-position: 95% 16px;
+    background-repeat: no-repeat;
+}
+.dj-megamenu-override li ul.dj-submenu > li.parent:hover > a,
+.dj-megamenu-override li ul.dj-submenu > li.parent.hover > a {
+	background-color: #1681d1;
+	background-position: 97% 16px;
+}
+.dj-megamenu-override li ul.dj-submenu > li.parent > a.active {
+    background-color: #1681d1;
+}
+.dj-megamenu-override li ul.dj-submenu > li.parent:hover > a.active,
+.dj-megamenu-override li ul.dj-submenu > li.parent.hover > a.active {
+	background-color: #1681d1;
+	background-position: 97% 16px;
+    color: #fff;
+}
+
+/* Submenu elements styles - tree */
+.dj-megamenu-override li ul.dj-subtree {
+	list-style: none outside;
+	padding: 0 !important;
+    margin: 5px 0 5px 25px !important;
+}
+.dj-megamenu-override li ul.dj-subtree > li {
+	list-style: square outside;
+	padding: 0;
+    margin: 0;
+    color: #666;
+}
+.dj-megamenu-override li ul.dj-subtree > li > a {
+	display: inline-block;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 13px;
+    color: #c3c3c3;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.dj-megamenu-override li ul.dj-subtree > li > a:hover {
+	background: transparent;
+	color: #fff;
+}
+.dj-megamenu-override li ul.dj-subtree > li.active > a {
+	text-decoration: underline;
+}
+.dj-megamenu-override li ul.dj-subtree > li > a small.subtitle {
+	color: #666;
+    display: block;
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+/* modules loaded into menu */
+.dj-megamenu-override .modules-wrap {
+	padding: 0px 10px;
+	color: #d2d2d2;
+}
+.dj-megamenu-override .modules-wrap p {
+	display: block !important;
+	padding: 0 !important;
+}
+
+/* sticky menu */
+.dj-megamenu-override.dj-megamenu-sticky {
+	height: auto;
+}
+.dj-megamenu-override .dj-stickylogo {
+	position: absolute;
+	z-index: 550;
+}
+.dj-megamenu-override .dj-stickylogo img {
+	max-height: 100%;
+	width: auto;
+}
+.dj-megamenu-override .dj-stickylogo.dj-align-center {
+	position: static;
+	text-align: center;
+	margin: 10px 0;
+}
+.dj-megamenu-override .dj-stickylogo.dj-align-left {
+	left: 20px;
+	max-height: 50px;
+	margin: 5px 0;
+}
+.dj-megamenu-override .dj-stickylogo.dj-align-right {
+	right: 20px;
+	max-height: 50px;
+	margin: 5px 0;
+}
