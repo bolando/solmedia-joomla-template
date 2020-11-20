@@ -53,7 +53,7 @@ $pageClass = $contentParams->get('pageclass_sfx'); ?>
 			</div>
 		</div>
 	</nav>
-	
+	<div class="odstep"></div>
 	<?php if ($front=='1'): ?>
 	<section id="slider" class="parallax-window" data-parallax="scroll" data-image-src="/images/banner.jpg">
 		<div class="container">
