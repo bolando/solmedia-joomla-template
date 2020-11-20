@@ -20,7 +20,7 @@ JLoader::import('joomla.filesystem.file');
     <script src="templates/<?php echo $this->template;?>/js/wow.js"></script>
 	<script src="templates/<?php echo $this->template;?>/js/solmedia.js?v=<?php echo date('i:s'); ?>"></script><link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-	<link href="/templates/<?php echo $this->template;?>/favicon.png" rel="shortcut icon" />
+	<link href="templates/<?php echo $this->template;?>/favicon.png" rel="shortcut icon" />
 </head>
 <?php
 $app = JFactory::getApplication();
