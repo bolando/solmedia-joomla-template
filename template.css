@@ -184,3 +184,39 @@ a:focus {outline:0}
     width: 34px;
     height: 34px;
 }
+/*t這 linku 1 poz.*/
+.dj-offcanvas-light,.dj-offcanvas-light .dj-offcanvas-top,ul.dj-mobile-light li.dj-mobileitem > a {
+    background: #000000;
+}
+/*t這 aktywne linku 1 poz.*/
+ul.dj-mobile-light li.dj-mobileitem:hover > a, ul.dj-mobile-light li.dj-mobileitem.active > a {
+	background:#000000;
+	opacity:.75;
+	color:#fff;
+}
+/*kolor kreski oddz.*/
+ul.dj-mobile-light li.dj-mobileitem > a {
+	border-color:#333;
+	color:#fff;
+        padding:10px;
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+	color:#fff;
+}
+/*t這 linku 2 poz.*/
+ul.dj-mobile-light ul li.dj-mobileitem > a {
+	 background: #000000;
+	 color:#fff;
+	 border-color:#333;
+}
+/*t這 aktywne linku 2 poz.*/
+ul.dj-mobile-light ul li.dj-mobileitem:hover > a, ul.dj-mobile-light ul li.dj-mobileitem.active > a {
+	background:#000000;
+	opacity:.75;
+	color:#fff;
+}
+/*kolor krzy篡ka*/
+ul.dj-mobile-light li.dj-mobileitem.parent > a span.toggler {
+    color: #fff;
+    top: -3px;
+}
