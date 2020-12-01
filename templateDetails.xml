@@ -14,7 +14,7 @@
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>solmedia.js</filename>
+		<folder>js</folder>
 		<folder>css</folder>
 		<folder>images</folder>
 	</files>
