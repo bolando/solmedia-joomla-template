@@ -177,7 +177,7 @@ dt.result-title {
 a:focus {outline:0}
 .dj-megamenu-select-light .dj-mobile-open-btn, .dj-megamenu-offcanvas-light .dj-mobile-open-btn, .dj-megamenu-accordion-light .dj-mobile-open-btn {
 	background:inherit !important;
-	color:#000000;
+	color:#000000 !important;
 	float:left;
 	margin-left:15px;
 	font-size:30px !important;
