@@ -12,6 +12,7 @@ body {
 a {
 	color: #000000;
 	transition:0.3s all ease;
+    word-break: break-word;
 }
 a:hover {
 	color: #000000;
