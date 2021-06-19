@@ -33,6 +33,20 @@ img {
 h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.flex {
+	display: flex;
+}
+@media (min-width: 1320px) {
+	.container {
+		width: 1300px;
+	}
+}
 /*sekcje*/
 .odstep {
 	padding-top: 90px
@@ -69,7 +83,10 @@ section {
 	color:#fff;
 	background:#333;
 	padding:10px 0;
-        font-size:13px
+    font-size:13px
+}
+#stopka a,#stopkaBig a{
+	color: #ddd;
 }
 /*BT reset*/
 .form-horizontal .control-label {
@@ -95,10 +112,7 @@ text-align:left
     border-left: 0px solid #ccc;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #46a5df;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #4495c7;
+    background-color: #000000;
 }
 /*PAGINACJA*/
 div.pagination {
